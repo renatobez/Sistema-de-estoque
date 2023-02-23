@@ -18,5 +18,29 @@ class Connect
         PDO:: ATTR_CASE => PDO::CASE_NATURAL
     ];
 
-    private static $instance; 
+    private static $instance;
+
+    public static function getInstance()
+    {
+        if (empty(self::$instance)) {
+            try {
+                self::$instance = new PDO(
+                    "mysql:host" . self::HOST . "dbname" . self::DBNAME,
+                    "root" . self::USER,
+                    "" . self::PASSWD,
+                    self::OPTIONS
+
+                );
+            } catch (PDOException $error) {
+                die("<p> Erro ao conectar com o banco de dados:</p>");
+                var_dump($error);
+            }
+        }
+        return self::$instance;
+    }
+
+    final private function __construct()
+    {
+
+    }
 }

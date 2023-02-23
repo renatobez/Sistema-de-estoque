@@ -214,10 +214,10 @@ require __DIR__ . "/../controller/cadastraRegistro.php";
 
                 </div>
             </div>
-
+    <div class="row">
             <!-- últimas entradas-->
-            <div class="card-body shadow p-3 mb-3 col-4" style="background-color: #ffffff; color: #343434; border-radius: 5px; width: 40%;">
-                <h5 class="card-title">Últimas entradas</h5>
+            <div class="card-body shadow m-2 col-4" style="background-color: #ffffff; color: #343434; border-radius: 5px;">
+                <h6 class="card-header p-2">Últimas entradas</h6>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -250,8 +250,8 @@ require __DIR__ . "/../controller/cadastraRegistro.php";
                 </table>
             </div>
             <!-- últimas saidas-->
-            <div class="card-body shadow p-3 mb-3" style="background-color: #ffffff; color: #343434; border-radius: 5px; width: 40%;">
-                <h5 class="card-title">Últimas Saídas</h5>
+            <div class="card-body shadow m-2 col-4" style="background-color: #ffffff; color: #343434; border-radius: 5px;">
+                <h6 class="card-header p-2">Últimas Saídas</h6>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -283,6 +283,8 @@ require __DIR__ . "/../controller/cadastraRegistro.php";
                     </tbody>
                 </table>
             </div>
+        </div>
+
         </div>
     </div>
 </div>
