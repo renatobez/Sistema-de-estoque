@@ -1,18 +1,20 @@
 <?php
+
 /*
- * Conexão com o banco de dados utilizando PDO
+ * Conexão com o banco
  */
 
-$dsn = 'mysql:host=localhost;dbname=register_stock;charset=utf8';
-$username = "root";
-$pass = "11803221";
 
-//bloco try(faça) para tratar erro de conexão
+
+//tratando erro
+
 try {
-    $pdo = new PDO($dsn, $username, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO(
+        "mysql:hostname=localhost;dbname=stock",
+        "root",
+        "11803221"
+    );
 
-}catch (PDOException $error){
-    echo "<p> Falha ao tentar conectar ao banco de dados</p>";
-    echo "$error";
+} catch (PDOException $error) {
+    var_dump($error);
 }

@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/pages/header.php';
 require __DIR__ . '/pages/footer.php';
-require __DIR__ . '/../source/functions.php';
+require __DIR__ . '/../Source/functions.php';
 require __DIR__ . "/../controller/cadastraRegistro.php";
 ?>
 
@@ -44,7 +44,6 @@ require __DIR__ . "/../controller/cadastraRegistro.php";
                     </div>
                 </div>
             </div>
-
                 
             <!-- card ações-->
             <div class="card-body shadow p-3 mb-3" style="background-color: #ffffff; color: #343434; border-radius: 5px;">

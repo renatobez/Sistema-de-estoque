@@ -1,5 +1,5 @@
 <?php
-
+require __DIR__."/../model/conection.php";
 //Recebe os dados do formulário e cadastra no banco de dados
 
     //verifica se os dados estão sendo recebidos via post
@@ -17,10 +17,6 @@
                 "qtd" => $qtd,
                 "estado" => $estado
             ];
-            
-            return $dados;
-
         }
-
     }
-    recebeDadosFormulario();
+recebeDadosFormulario();
